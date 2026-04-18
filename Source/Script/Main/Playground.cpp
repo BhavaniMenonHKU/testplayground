@@ -1,5 +1,5 @@
-#include "Slate/SlateCore.h"
-#include "Slate/Widgets/GameScreens.h"
+#include "SlateCore.h"
+#include "GameScreens.h"
 #include <iostream>
 #include <vector>
 

@@ -1,5 +1,5 @@
-#include "Slate/Widgets/GameScreens.h"
-#include "Slate/Widgets/WidgetsCore.h"
+#include "GameScreens.h"
+#include "WidgetsCore.h"
 #include <iostream>
 #include <sstream>
 
@@ -139,17 +139,17 @@ void SDailySummaryScreen::Render() {
     
     // health bar
     DrawText(x + 3, y + 9, "HEALTH:");
-    DrawBar(x + 13, y + 9, 40, Health, MaxHealth);
+    DrawBar(x + 13, y + 9, 40, Health, MaxHealth, "█", ".");
     DrawText(x + 55, y + 9, std::to_string(Health) + "/" + std::to_string(MaxHealth));
     
     // food bar
     DrawText(x + 3, y + 11, "FOOD:");
-    DrawBar(x + 13, y + 11, 40, Food, MaxFood);
+    DrawBar(x + 13, y + 11, 40, Food, MaxFood, "█", ".");
     DrawText(x + 55, y + 11, std::to_string(Food) + "/" + std::to_string(MaxFood));
     
     // water bar
     DrawText(x + 3, y + 13, "WATER:");
-    DrawBar(x + 13, y + 13, 40, Water, MaxWater);
+    DrawBar(x + 13, y + 13, 40, Water, MaxWater, "█", ".");
     DrawText(x + 55, y + 13, std::to_string(Water) + "/" + std::to_string(MaxWater));
     
     // zone progress
@@ -228,7 +228,7 @@ void SVictoryScreen::Render() {
     int x = 5 + Location.X;
     int y = 2 + Location.Y;
     
-    SRectWireframe outer(x, y, 60, 18);
+    SRectWireframe outer(x, y, 70, 22);
     outer.Render();
     SRectFilled titleBar(x, y, 60, 1, "#");
     titleBar.Render();
@@ -267,7 +267,7 @@ void SVictoryScreen::Render() {
     stats << "   FINAL SCORE:                  " << FinalScore << "\n\n";
     stats << "   [1] play again   [2] high scores   [3] quit";
     
-    STextBox statsBox(x + 2, y + 3, 56, 18, stats.str(), true, true);
+    STextBox statsBox(x + 2, y + 3, 66, 20, stats.str(), true, true);
     statsBox.Render();
     
     // wait for user input

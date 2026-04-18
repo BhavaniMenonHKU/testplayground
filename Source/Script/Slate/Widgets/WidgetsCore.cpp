@@ -1,4 +1,4 @@
-#include "Slate/Widgets/WidgetsCore.h"
+#include "WidgetsCore.h"
 
 #include <cmath>
 

@@ -1,4 +1,4 @@
-#include "Slate/Sprites/SpritesCore.h"
+#include "SpritesCore.h"
 
 #include <iostream>
 
