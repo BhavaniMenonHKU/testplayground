@@ -1,4 +1,4 @@
-#include "SpritesCore.h"
+#include "../../../Header/Slate/Sprites/SpritesCore.h"
 
 #include <iostream>
 

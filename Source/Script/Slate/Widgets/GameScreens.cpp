@@ -1,5 +1,5 @@
-#include "../../../../Header/Slate/Widgets/GameScreens.h"
-#include "../../../../Header/Slate/Widgets/WidgetsCore.h"
+#include "../../../Header/Slate/Widgets/GameScreens.h"
+#include "../../../Header/Slate/Widgets/WidgetsCore.h"
 #include <iostream>
 #include <sstream>
 
